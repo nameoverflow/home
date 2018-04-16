@@ -1,0 +1,18 @@
+language: node_js
+node_js: stable
+
+install:
+  - cd blog
+  - npm install
+  - cd ..
+
+script:
+  - cd blog
+  - git config user.name "Travis CI"
+  - git config user.email "$COMMIT_AUTHOR_EMAIL"
+  - hexo cl
+  - hexo d
+
+branches:
+  only:
+    - master

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>【鼠鬚管】輸入法{{TYPE}}頻道</title>
+    <link>http://rime.github.io/{{PATH}}/squirrel/appcast.xml</link>
+    <description>鼠鬚管{{TYPE}} Appcast 更新頻道</description>
+    <language>zh</language>
+    <item>
+      <title>鼠鬚管 {{VERSION}}</title>
+      <sparkle:releaseNotesLink>http://rime.github.io/{{PATH}}/squirrel/</sparkle:releaseNotesLink>
+      <sparkle:minimumSystemVersion>10.7.0</sparkle:minimumSystemVersion>
+      <pubDate>{{TIME}}</pubDate>
+      <enclosure url="http://dl.bintray.com/rime/squirrel/Squirrel-{{VERSION}}.zip"
+                 sparkle:version="{{VERSION}}"
+                 sparkle:dsaSignature="{{SIGN}}"
+                 length="{{SIZE}}"
+                 type="application/octet-stream"/>
+    </item>
+  </channel>
+</rss>
